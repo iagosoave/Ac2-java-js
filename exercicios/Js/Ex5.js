@@ -1,12 +1,9 @@
-function tarefa() {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve("Tarefa em segundo plano em JavaScript!");
-        }, 1000);
-    });
+class Pessoa {
+    constructor(nome) {
+        this.nome = nome;
+    } saudacao() {
+        console.log("Olá meu nome é " + this.nome);
+    }
 }
-async function executarTarefa() {
-    const resultado = await tarefa();
-    console.log(resultado);
-}
-executarTarefa();
+const pessoa = new Pessoa("Iago");
+pessoa.saudacao();

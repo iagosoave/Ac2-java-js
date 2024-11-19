@@ -1,9 +1,8 @@
 public class Ex3 {
-    public static void saudacao() {
-        System.out.println("Olá de uma função em Java!");
-    }
-
     public static void main(String[] args) {
-        saudacao(); // Chamando o método
+    int numero = 10; //Declaração de uma variável inteira
+    System.out.println(numero);
+    // Não é possível fazer isso: número = "dez"; // Erro, pois "numero" é do tipo int
     }
-}
+    }
+    

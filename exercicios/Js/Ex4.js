@@ -1,9 +1,12 @@
-class Pessoa {
-    constructor(nome) {
-        this.nome = nome;
-    } saudacao() {
-        console.log("Olá meu nome é " + this.nome);
-    }
+function tarefa() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve("Tarefa em segundo plano em JavaScript!");
+        }, 1000);
+    });
 }
-const pessoa = new Pessoa("Iago");
-pessoa.saudacao();
+async function executarTarefa() {
+    const resultado = await tarefa();
+    console.log(resultado);
+}
+executarTarefa();
